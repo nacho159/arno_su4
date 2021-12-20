@@ -1,0 +1,233 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #7d6959;}
+body{
+    font-family: 'Noto Sans KR';
+    font-size: 17px;
+    line-height: 45px;
+    color: #432d2d;
+}
+
+/*해더*/
+#header{
+    height: 115px;
+}
+.header_inner{
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+.icon{
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+.icon li{
+    float: left;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.icon a:hover{
+    color: #4b443a;
+}
+.login{
+    background: url(images/login.png) no-repeat left center;
+}
+.login a{
+    padding: 0 10px 0 30px;
+    margin-right: 10px; 
+    display: block;
+}
+.shopping{
+    background: url(images/shopping.png) no-repeat left center;
+}
+.shopping a{
+    padding: 0 0 0  40px;
+    margin-right: 10px; 
+    display: block;
+}
+.search a{
+    background: url(images/search.png) no-repeat left center;
+    height: 45px;
+    width: 40px;
+    display: block;
+}
+#header2{
+    background-color: #fff;
+    height: 45px;
+    padding: 0 0 20px;
+}
+.header2_inner{
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+#header2 .menu{
+    font-size: 27px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -441px;
+}
+#header2 .menu li{
+    font-family: 'Noto Sans KR', sans-serif;
+    float: left;
+    margin: 0 56px;
+}
+#header2 .menu a{
+    color: #837764;
+}
+#header2 .menu a:hover{
+    color: #4b443a;
+}
+#header2.scroll-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*배너*/
+#banner{
+    margin: auto;
+} 
+#banner img{
+    width: 100%;
+    display: block;
+}
+
+/*컨텐츠*/
+#content{
+    width: 1300px;
+    height: 1375px;
+    margin: 100px auto;
+}
+#content li{
+    float: left;
+    width: 625px;
+    height: 425px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+#content .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 1s; 
+    height: 425px;
+}
+#content p{
+    font-size: 43px;
+    text-align: center;
+    margin-top: 176px;
+    color: #fff;
+}
+
+#content img{
+    display: block;
+    transition: all 1s;
+}
+#content li:hover img{
+    transform: scale(1.2, 1.2);
+}
+#content li:hover .box{
+    opacity: 0;
+}
+#content li:nth-child(2n){
+    margin-left: 50px;
+}
+.popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+.popup div{
+    width: 1030px;
+    height: 821px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup p{
+    position: absolute;
+    top: 6px; 
+    right: 15px;
+    font-size: 36px;
+}
+.popup img{
+    display: block;
+}
+.popup a{
+    color: #432d2d;
+}
+
+
+/*푸터*/
+#footer{
+    height: 310px;
+    background-color: #464646;
+}
+.footer_inner{
+    color: #838383;
+    width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+    font-weight: 500;
+}
+.f_text{
+    float: left;
+    width: 800px;
+}
+.f_text img{
+    float: left;
+    display: block;
+    margin-bottom: 40px;
+}
+.f_text ul{
+    float: right;
+    margin-right: 100px;
+}
+.f_text ul li{
+    float: left;
+    margin-left: 16px;
+}
+.f_text ul li a{
+    color: #838383;
+}
+.f_text ul li a:hover{
+    color: rgb(199, 198, 198);
+}
+.f_text p{
+    clear: both;
+    line-height: 30px;
+}
+.sns{
+    float: right;
+    margin-top: 40px;
+}
+.sns li{
+    float: left;
+    margin-right: 13px;
+    opacity: 0.6;
+}
+.sns li:hover{
+    opacity: 1;
+}
